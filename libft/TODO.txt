@@ -1,0 +1,4 @@
+Fix
+
+ft_strnstr
+ft_lstmap
