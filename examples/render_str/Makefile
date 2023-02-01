@@ -6,7 +6,7 @@
 #    By: dmalesev <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 09:10:41 by dmalesev          #+#    #+#              #
-#    Updated: 2023/02/01 17:28:31 by dmalesev         ###   ########.fr        #
+#    Updated: 2023/02/01 19:37:59 by dmalesev         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,6 +83,8 @@ $(DM_BDF_RENDER):
 clean:
 	@rm -rf $(OBJECTS_DIRECTORY)
 	@printf "$(PRINT_NAME): Deleted $(OBJECTS_DIRECTORY)*\n"
+	@make -C $(LIBFT_DIRECTORY) clean
+	@make -C $(DM_BDF_RENDER_DIRECTORY) clean
 
 bclean:
 	@rm -f $(NAME)
@@ -90,6 +92,8 @@ bclean:
 
 fclean: clean
 	@make bclean
+	@make -C $(LIBFT_DIRECTORY) bclean
+	@make -C $(DM_BDF_RENDER_DIRECTORY) bclean
 	@printf "\n"
 
 re: fclean all
