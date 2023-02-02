@@ -36,4 +36,4 @@ Arguments of the function are following:
 
 <img src="font_render_with_graphical_window.png"></img>
 
-**__DISCLAIMER! The library won't create magical scene like the one you see above, it will create only the characters, similar to ones you can see in bottom left of the image. :)__**
+**__DISCLAIMER! The library won't create magical scene, like the one above, it will print characters, similar to ones you can see in bottom left of the image. :)__**
