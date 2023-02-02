@@ -1,14 +1,14 @@
 # dm_bdf_render library for displaying bdf fonts in C
 
 This library was made and tested on MacOS and WSL2 Ubuntu enviroment.
-It uses bdf font which is lightweight compared to ttf or similar font types that use vectors to draw glyphs. Downside is that font isn't scalable.
+It uses bdf font, which is quite lightweight compared to ttf or similar font types that use vectors to draw glyphs. Downside is that font isn't scalable.
 
 # HOW TO USE
 
   - Clone the repository;
   - From command line move into the root of repository and type Make;
  
-This creates dm_bdf_render.a which is a static library. Link your source code through the compiler and you will be able to access function that prints single glyph or whole string. 
+This creates dm_bdf_render.a which is a static library. Link your source code through the compiler and you will be able to access a function that prints single glyph or whole string. 
 
 If you want test out rendering certain strings in specific font, try out example folder.
 
